@@ -6,15 +6,15 @@ update the folder locations in the beginning of the files:
 ** 1_NOC_ShipTSGData.R:
 
 nc1 <- nc_open("X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/TSG/20261007-000000-SBE45-SBE45.TSG") #note that the 
-# Output Directory
+Output Directory
 data_dir <- "C:/codasshared/AtSea/TSG/DY216/Data"
-# Collate all of them:
+Collate all of them:
 tsg_dir <- "X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/TSG"
 
 ** 2_NOC_ShipSURFMETData.R
 nc2 <- nc_open("X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/SURFMETV3/20261007-000000-Surf-SURFMET.SURFMETv3")
 surf_dir <- "X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/SURFMETV3"
-# Output Directory
+Output Directory
 data_dir <- "C:/codasshared/AtSea/TSG/DY216/Data"
 
 ** 3_NOC_ShipGPSData.R
@@ -22,7 +22,7 @@ nc3 <- nc_open("X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/GPS/2026
 
 gps_dir <- "X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/GPS"
 
-# Output Directory
+Output Directory
 data_dir <- "C:/codasshared/AtSea/TSG/DY216/Data"
 
 ** 4_NOC_Join_and_Plot_interp.R
