@@ -24,6 +24,8 @@ nc1 <- nc_open("X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/TSG/2026
 print(nc1)
 names(nc1$var)
 
+# Output Directory
+data_dir <- "C:/codasshared/AtSea/TSG/DY216/Data"
 
 # Collate all of them:
 tsg_dir <- "X:/Ship_Systems/Data_acquisition_systems/TechSAS/NetCDF/TSG"
@@ -80,7 +82,7 @@ tsg_all <- map_dfr(tsg_files, read_tsg) %>%
 
 #### Store tsg_all as an RDA file:
 
-data_dir <- "C:/codasshared/AtSea/TSG/DY216/Data"
+#data_dir <- "C:/codasshared/AtSea/TSG/DY216/Data"
 #C:/AZMP/6_REQUESTS/2026/JC290_ShipTSGData/Data" #Create a folder called Data within the data_dir
 
 if(!dir.exists(data_dir)){
