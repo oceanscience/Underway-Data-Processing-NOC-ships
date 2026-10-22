@@ -97,6 +97,8 @@ write.csv(tsg_surf_gps, file=file.path(data_dir, "DY216_CollatedUnderwayData.csv
 #hourly interp the data
 # check when flowrate is 0 and remove those rows from the tsg_surf_gps dataframe, since these are likely when the ship is in port and not underway:
 tsg_surf_gps <- tsg_surf_gps[tsg_surf_gps$flow_rate > 0, ]
+tsg_surf_gps=tsg_surf_gps[complete.cases(tsg_surf_gps),]
+
 start_date <- tsg_surf_gps$datetime_join
 end_date <- tsg_surf_gps$datetime_join[length(tsg_surf_gps$datetime_join)]
 
