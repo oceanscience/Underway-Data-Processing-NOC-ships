@@ -48,7 +48,7 @@
 
 #** FUNCTIONS:
 
-# read_elog_tsg3.R - read elog and processed tsg files, match the samples to the TSG data and create tables and plots
+# read_elog_tsg4.R - read elog and processed tsg files, match the samples to the TSG data and create tables and plots
 # tsg_ctd.R - read ctd ODF data and match to TSG data and create a table 
 
 # author Diana Cardoso
@@ -77,7 +77,7 @@ pathctd <- "C:/codasshared/AtSea/TSG/DY216/ctd"
 samples_directory <- "C:/codasshared/AtSea/TSG/DY216/bottle"
 
 #List of Functions
-source("4comparesamples/read_elog_tsg3.R")
+source("4comparesamples/read_elog_tsg4.R")
 source("4comparesamples/tsg_ctd.R")
 
 # read and process data
